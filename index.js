@@ -39,12 +39,12 @@ fuzzyMatch(drivers,'Bo')
 console.log(fuzzyMatch(drivers,'Bo'))
 
 function matchName(arr,string){
-    const obj = arr.filter(function(key){
-        if(string === key.name){
-            return key.name
+    const newArr = arr.filter(function(obj){
+        if(string === obj.name){
+            return obj.name
         }
     })
-    return obj
+    return newArr
 }
 
 matchName(arrayOfDriverObjs,"Bobby")
